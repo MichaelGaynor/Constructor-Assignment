@@ -5,7 +5,7 @@ let Dog = function(params){
   params = params || {};
 
   this.color = params.color;
-  this.hungry = params.hungry;
+  this.hungry = params.hungry === undefined? true : params.hungry;
   this.status = 'normal';
   this.owner = params.owner;
 };
@@ -15,14 +15,14 @@ let Human = function(params){
   params = params || {};
 
   this.cool = params.cool || false;
-  moonshine.hungry = true;
+  // moonshine.hungry = true;
 
   this.pet = function(dog) {
     return dog.status = 'happy';
-  }
+  };
   this.feed = function(dog) {
     return dog.hungry = false;
-  }
+  };
 };
 
 // Do not ADD or MODIFY code below this line :)

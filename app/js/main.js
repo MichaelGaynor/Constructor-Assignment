@@ -8,7 +8,7 @@ var Dog = function Dog(params) {
   params = params || {};
 
   this.color = params.color;
-  this.hungry = params.hungry;
+  this.hungry = params.hungry === undefined ? true : params.hungry;
   this.status = 'normal';
   this.owner = params.owner;
 };
@@ -17,7 +17,7 @@ var Human = function Human(params) {
   params = params || {};
 
   this.cool = params.cool || false;
-  moonshine.hungry = true;
+  // moonshine.hungry = true;
 
   this.pet = function (dog) {
     return dog.status = 'happy';
