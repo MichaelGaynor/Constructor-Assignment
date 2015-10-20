@@ -4,9 +4,28 @@
 
 'use strict';
 
-var Dog = function Dog() {};
+var Dog = function Dog(params) {
+  params = params || {};
 
-var Human = function Human() {};
+  this.color = params.color;
+  this.hungry = params.hungry;
+  this.status = 'normal';
+  this.owner = params.owner;
+};
+
+var Human = function Human(params) {
+  params = params || {};
+
+  this.cool = params.cool || false;
+  moonshine.hungry = true;
+
+  this.pet = function (dog) {
+    return dog.status = 'happy';
+  };
+  this.feed = function (dog) {
+    return dog.hungry = false;
+  };
+};
 
 // Do not ADD or MODIFY code below this line :)
 // Dogs
