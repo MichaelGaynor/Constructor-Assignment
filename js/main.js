@@ -1,10 +1,13 @@
 // Constructors
 // Only add code to *THIS* section!
 
-///
-///
-///
-///
+let Dog = function(){
+
+};
+
+let Human = function(){
+
+};
 
 // Do not ADD or MODIFY code below this line :)
 // Dogs
